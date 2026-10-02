@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    --rosa1: rgb(255, 171, 234);
+    --rosa2: rgb(255, 144, 227);
+    --rosa3: rgb(255, 236, 245);
+    --rosa4: rgb(131, 0, 109);
+}
+
+header{
+    padding: 2em 0;
+}
+
+#menu-navegacion ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 10%;
+    align-items: center;
+    gap: 1em;
+}
+
+#menu-navegacion li{
+    list-style: none;
+    text-align: center;
+}
+
+#menu-navegacion img{
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    padding: 10px 0px;
+    background-color: var(--rosa1);
+    margin: 0 1em;
+}
+
+#menu-navegacion img:hover{
+    background-color: var(--rosa2);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+a:hover{
+    color: var(--rosa4);
+}
+
+/* ------ FAQs -------*/
+
+#faq-gatos {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--rosa4);
+}
+
+/* Título */
+#faq-gatos h2 {
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    color: var(--rosa4);
+    font-weight: 700;
+}
+
+/* Cada pregunta */
+#faq-gatos details {
+    margin-bottom: 15px;
+    background: var(--rosa3);
+    border: 1px solid var(--rosa1);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(78, 54, 38, 0.07);
+    transition:
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+#faq-gatos details:hover {
+    border-color: var(--rosa1);
+    box-shadow: 0 7px 20px rgba(78, 54, 38, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Pregunta */
+#faq-gatos summary {
+    position: relative;
+    padding: 20px 55px 20px 22px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--rosa4);
+    background: var(--rosa3);
+    transition:
+        all 0.3s ease;
+}
+
+/* Ocultar marcador por defecto */
+#faq-gatos summary::-webkit-details-marker {
+    display: none;
+}
+
+#faq-gatos summary::marker {
+    display: none;
+}
+
+/* Icono + / − */
+#faq-gatos summary::after {
+    content: "+";
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--rosa4);
+    transition: transform 0.3s ease;
+}
+
+/* Pregunta abierta */
+#faq-gatos details[open] summary {
+    color: var(--rosa4);
+    background: var(--rosa3);
+}
+
+#faq-gatos details[open] summary::after {
+    content: "−";
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Respuesta */
+#faq-gatos details p {
+    margin: 0;
+    padding: 0 22px 22px;
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: var(--rosa4);
+    background: var(--rosa3);
+}
+
+/* Texto en negrita */
+#faq-gatos details p strong {
+    color: var(--rosa4);
+    font-weight: 700;
+}
+
+
+/* ================================
+   Responsive
+   ================================ */
+
+@media (max-width: 600px) {
+
+    #faq-gatos {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+
+    #faq-gatos h2 {
+        margin-bottom: 25px;
+    }
+
+    #faq-gatos summary {
+        padding: 17px 48px 17px 18px;
+        font-size: 1rem;
+    }
+
+    #faq-gatos summary::after {
+        right: 17px;
+    }
+
+    #faq-gatos details p {
+        padding: 0 18px 18px;
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+}
