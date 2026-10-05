@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
 <header id="cabecera">
@@ -24,6 +25,110 @@
         </ul>
     </nav>
 </header>
-    
+    <h1>Formulario de Preferencias de Razas de Gatos</h1>
+    <p>Selecciona las características que prefieres para encontrar tu gato ideal:</p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>1. ¿Qué tipo de pelaje prefieres?</legend>
+            
+            <input type="radio" id="pelaje_corto" name="tipo_pelaje" value="Pelo Corto">
+            <label for="pelaje_corto">Pelo Corto</label><br>
+
+            <input type="radio" id="pelaje_corto_denso" name="tipo_pelaje" value="Pelo Corto Denso">
+            <label for="pelaje_corto_denso">Pelo Corto Denso</label><br>
+
+            <input type="radio" id="pelaje_manto_doble" name="tipo_pelaje" value="Pelo Corto (Manto Doble)">
+            <label for="pelaje_manto_doble">Pelo Corto (Manto Doble)</label><br>
+
+            <input type="radio" id="pelaje_semilargo" name="tipo_pelaje" value="Pelo Semilargo">
+            <label for="pelaje_semilargo">Pelo Semilargo</label><br>
+
+            <input type="radio" id="pelaje_largo" name="tipo_pelaje" value="Pelo Largo">
+            <label for="pelaje_largo">Pelo Largo</label><br>
+
+            <input type="radio" id="sin_pelo" name="tipo_pelaje" value="Sin Pelo">
+            <label for="sin_pelo">Sin Pelo</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>2. ¿Qué estructura facial prefieres?</legend>
+            
+            <input type="radio" id="facial_braquicefalico" name="estructura_facial" value="Braquicefálico">
+            <label for="facial_braquicefalico">Braquicefálico (Cara chata)</label><br>
+
+            <input type="radio" id="facial_mesocefalico" name="estructura_facial" value="Mesocefálico">
+            <label for="facial_mesocefalico">Mesocefálico (Estructura media/proporcionada)</label><br>
+
+            <input type="radio" id="facial_dolicocefalico" name="estructura_facial" value="Dolicocefálico (Cara alargada)">
+            <label for="facial_dolicocefalico">Dolicocefálico (Cara alargada)</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>3. ¿Qué contextura corporal prefieres?</legend>
+            
+            <input type="radio" id="corp_cobby" name="contextura_corporal" value="Cobby (Robusto)">
+            <label for="corp_cobby">Cobby (Robusto)</label><br>
+
+            <input type="radio" id="corp_equilibrado" name="contextura_corporal" value="Equilibrado / Medio">
+            <label for="corp_equilibrado">Equilibrado / Medio</label><br>
+
+            <input type="radio" id="corp_esbelto" name="contextura_corporal" value="Esbelto / Oriental">
+            <label for="corp_esbelto">Esbelto / Oriental</label><br>
+
+            <input type="radio" id="corp_musculoso" name="contextura_corporal" value="Musculoso">
+            <label for="corp_musculoso">Musculoso</label><br>
+
+            <input type="radio" id="corp_atletico" name="contextura_corporal" value="Musculoso / Atlético">
+            <label for="corp_atletico">Musculoso / Atlético</label><br>
+
+            <input type="radio" id="corp_estilizado" name="contextura_corporal" value="Musculoso / Estilizado">
+            <label for="corp_estilizado">Musculoso / Estilizado</label><br>
+
+            <input type="radio" id="corp_grande" name="contextura_corporal" value="Formato Grande">
+            <label for="corp_grande">Formato Grande</label><br>
+
+            <input type="radio" id="corp_gigante" name="contextura_corporal" value="Formato Gigante">
+            <label for="corp_gigante">Formato Gigante</label>
+        </fieldset>
+
+        <br>
+
+       
+        <fieldset>
+            <legend>4. ¿Qué nivel de energía prefieres?</legend>
+            
+            <input type="radio" id="energia_bajo" name="nivel_energia" value="Bajo">
+            <label for="energia_bajo">Bajo</label><br>
+
+            <input type="radio" id="energia_bajo_medio" name="nivel_energia" value="Bajo - Medio">
+            <label for="energia_bajo_medio">Bajo - Medio</label><br>
+
+            <input type="radio" id="energia_medio" name="nivel_energia" value="Medio">
+            <label for="energia_medio">Medio</label><br>
+
+            <input type="radio" id="energia_medio_alto" name="nivel_energia" value="Medio - Alto">
+            <label for="energia_medio_alto">Medio - Alto</label><br>
+
+            <input type="radio" id="energia_alto" name="nivel_energia" value="Alto">
+            <label for="energia_alto">Alto</label><br>
+
+            <input type="radio" id="energia_muy_alto" name="nivel_energia" value="Muy Alto">
+            <label for="energia_muy_alto">Muy Alto</label><br>
+
+            <input type="radio" id="energia_extremo" name="nivel_energia" value="Extremo">
+            <label for="energia_extremo">Extremo</label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Buscar raza compatible</button>
+
+    </form>
 </body>
 </html>
