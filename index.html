@@ -17,9 +17,9 @@
     <header id="cabecera">
         <nav id="menu-navegacion">
             <ul>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="#faq-gatos">Preguntas frecuentes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
                 <li><a href="index.html"><img src="imagenes/logo-michis-negro.png" alt="logo michis negro"></a></li>
                 <li><a href="puntuaciones.html">Ranking</a></li>
                 <li><a href="cuidar.html">Como cuidar</a></li>
@@ -29,10 +29,12 @@
     </header>
 
     <main>
-          <section class="sobre-nosotros" id="sobre-nosotros">
+        <section class="sobre-nosotros" id="sobre-nosotros">
             <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo apasionado por los gatos. En esta web queremos ayudarte a entender mejor a tu michi y a darle la mejor vida posible.</p>
-            <p>Aquí encontrarás consejos, curiosidades y respuestas a las dudas más habituales sobre el carácter felino.</p>
+            <p>Somos un equipo apasionado por los gatos. En esta web queremos ayudarte a entender mejor a tu michi y a
+                darle la mejor vida posible.</p>
+            <p>Aquí encontrarás consejos, curiosidades y respuestas a las dudas más habituales sobre el carácter felino.
+            </p>
         </section>
 
         <section class="galeria">
@@ -40,25 +42,106 @@
             <div class="galeria-contenedor">
                 <figure>
                     <img src="https://marketplace.canva.com/xHPJk/MAHA8XxHPJk/1/tl/canva-MAHA8XxHPJk.jpg" alt="Gato 1">
-                    
+
                 </figure>
                 <figure>
                     <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Gato2">
-          
+
                 </figure>
                 <figure>
-                    <img src="https://content.elmueble.com/medio/2023/03/05/gato-exotico_4af6e808_230305153458_900x900.jpg" alt="Gato3">
-                    
+                    <img src="https://content.elmueble.com/medio/2023/03/05/gato-exotico_4af6e808_230305153458_900x900.jpg"
+                        alt="Gato3">
+
                 </figure>
                 <figure>
-                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/British_shorthair_Irina_AEA.JPG/960px-British_shorthair_Irina_AEA.JPG?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Gato4">
-                    
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/British_shorthair_Irina_AEA.JPG/960px-British_shorthair_Irina_AEA.JPG?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+                        alt="Gato4">
+
                 </figure>
             </div>
         </section>
 
-      
-    <main>
+        <section id="contacto" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-intro">
+                    <span class="section-tag">Contacto</span>
+
+                    <h2>Hablemos sobre tu proyecto</h2>
+
+                    <p>
+                        ¿Tienes alguna pregunta, sugerencia o quieres contactar con
+                        nuestro equipo? Completa el formulario y te responderemos
+                        lo antes posible.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <span class="contact-icon" aria-hidden="true">✉</span>
+                            <div>
+                                <h3>Correo electrónico</h3>
+                                <a href="mailto:hola@michis.com">
+                                    hola@michis.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span class="contact-icon" aria-hidden="true">⌖</span>
+                            <div>
+                                <h3>Ubicación</h3>
+                                <p>Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autocomplete="name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com"
+                            autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>
+                                Selecciona un asunto
+                            </option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu mensaje..."
+                            required></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+
+                        <label for="privacidad">
+                            He leído y acepto la política de privacidad.
+                        </label>
+                    </div>
+
+                    <button class="submit-button" type="submit">
+                        Enviar mensaje
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </form>
+            </div>
+        </section>
         <section id="faq-gatos">
             <h2>Preguntas Frecuentes sobre el Carácter Felino</h2>
 
@@ -104,37 +187,37 @@
     </main>
 
     <footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-links">
-            <a href="#contacto">Contacto</a>
-            <a href="#sobre-nosotros">Sobre nosotros</a>
-            <a href="#faq-gatos">Preguntas frecuentes</a>
-        </div>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#contacto">Contacto</a>
+                <a href="#sobre-nosotros">Sobre nosotros</a>
+                <a href="#faq-gatos">Preguntas frecuentes</a>
+            </div>
 
-        <div class="social-links" aria-label="Redes sociales">
-            <a href="#" aria-label="Instagram">
-                <img src="imagenes/icono-instagram.png" alt="Instagram">
+            <div class="social-links" aria-label="Redes sociales">
+                <a href="#" aria-label="Instagram">
+                    <img src="imagenes/icono-instagram.png" alt="Instagram">
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <img src="imagenes/icono-facebook.png" alt="Facebook">
+                </a>
+
+                <a href="#" aria-label="X">
+                    <img src="imagenes/icono-x.png" alt="Twitter">
+                </a>
+            </div>
+
+            <div class="footer-info">
+                <span>v1.0.0</span>
+                <span>Copyright © 2026 Michis</span>
+            </div>
+
+            <a class="footer-logo" href="/" aria-label="Página principal">
+                <img src="imagenes/logo-michis-negro.png" alt="Logo de Michis">
             </a>
-
-            <a href="#" aria-label="Facebook">
-                <img src="imagenes/icono-facebook.png" alt="Facebook">
-            </a>
-
-            <a href="#" aria-label="X">
-                <img src="imagenes/icono-x.png" alt="Twitter">
-            </a>
         </div>
-
-        <div class="footer-info">
-            <span>v1.0.0</span>
-            <span>Copyright © 2026 Michis</span>
-        </div>
-
-        <a class="footer-logo" href="/" aria-label="Página principal">
-            <img src="imagenes/logo-michis-negro.png" alt="Logo de Michis">
-        </a>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>

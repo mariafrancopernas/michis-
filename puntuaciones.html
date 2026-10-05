@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,350 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-    
+    <header id="cabecera">
+        <nav id="menu-navegacion">
+            <ul>
+                <li><a href="index.html">Sobre nosotros</a></li>
+                <li><a href="index.html">Preguntas frecuentes</a></li>
+                <li><a href="index.html">Contacto</a></li>
+                <li><a href="index.html"><img src="imagenes/logo-michis-negro.png" alt="logo michis negro"></a></li>
+                <li><a href="puntuaciones.html">Ranking</a></li>
+                <li><a href="cuidar.html">Como cuidar</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="ranking-razas" id="ranking-razas">
+            <div class="ranking-cabecera">
+                <span class="section-tag">Ranking felino</span>
+
+                <h2>Razas de gatos</h2>
+
+                <p>
+                    Descubre una comparación orientativa de distintas razas según
+                    su limpieza, inteligencia y nivel de peligrosidad.
+                </p>
+            </div>
+
+            <div class="leyenda-ranking" aria-label="Leyenda de puntuaciones">
+                <span>
+                    <i class="leyenda-patita patita-rosa" aria-hidden="true">🐾</i>
+                    Puntuación favorable
+                </span>
+
+                <span>
+                    <i class="leyenda-patita patita-negra" aria-hidden="true">🐾</i>
+                    Puntuación restante
+                </span>
+            </div>
+
+            <div class="tabla-ranking">
+                <div class="ranking-fila ranking-titulos">
+                    <div>Posición</div>
+                    <div>Raza</div>
+                    <div>Peligrosidad</div>
+                    <div>Limpieza</div>
+                    <div>Inteligencia</div>
+                </div>
+
+                <!-- Puesto 1 -->
+                <article class="ranking-fila">
+                    <div class="ranking-posicion">
+                        <span class="medalla medalla-oro">1</span>
+                    </div>
+
+                    <div class="raza-datos">
+                        <div class="raza-avatar raza-ragdoll">🐱</div>
+                        <div>
+                            <h3>Ragdoll</h3>
+                            <span>Tranquilo y sociable</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Baja</span>
+                        <div class="patitas" aria-label="1 de 5 en peligrosidad">
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Alta</span>
+                        <div class="patitas" aria-label="4 de 5 en limpieza">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Alta</span>
+                        <div class="patitas" aria-label="4 de 5 en inteligencia">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Puesto 2 -->
+                <article class="ranking-fila">
+                    <div class="ranking-posicion">
+                        <span class="medalla medalla-plata">2</span>
+                    </div>
+
+                    <div class="raza-datos">
+                        <div class="raza-avatar raza-maine-coon">🐱</div>
+                        <div>
+                            <h3>Maine Coon</h3>
+                            <span>Amable y equilibrado</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Baja</span>
+                        <div class="patitas" aria-label="1 de 5 en peligrosidad">
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Media-alta</span>
+                        <div class="patitas" aria-label="4 de 5 en limpieza">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Alta</span>
+                        <div class="patitas" aria-label="4 de 5 en inteligencia">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Puesto 3 -->
+                <article class="ranking-fila">
+                    <div class="ranking-posicion">
+                        <span class="medalla medalla-bronce">3</span>
+                    </div>
+
+                    <div class="raza-datos">
+                        <div class="raza-avatar raza-british">🐱</div>
+                        <div>
+                            <h3>British Shorthair</h3>
+                            <span>Independiente y calmado</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Muy baja</span>
+                        <div class="patitas" aria-label="1 de 5 en peligrosidad">
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Alta</span>
+                        <div class="patitas" aria-label="4 de 5 en limpieza">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Media-alta</span>
+                        <div class="patitas" aria-label="3 de 5 en inteligencia">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Puesto 4 -->
+                <article class="ranking-fila">
+                    <div class="ranking-posicion">
+                        <span class="medalla medalla-normal">4</span>
+                    </div>
+
+                    <div class="raza-datos">
+                        <div class="raza-avatar raza-abisinio">🐱</div>
+                        <div>
+                            <h3>Abisinio</h3>
+                            <span>Activo y curioso</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Media</span>
+                        <div class="patitas" aria-label="3 de 5 en peligrosidad">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Alta</span>
+                        <div class="patitas" aria-label="4 de 5 en limpieza">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Muy alta</span>
+                        <div class="patitas" aria-label="5 de 5 en inteligencia">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Puesto 5 -->
+                <article class="ranking-fila">
+                    <div class="ranking-posicion">
+                        <span class="medalla medalla-normal">5</span>
+                    </div>
+
+                    <div class="raza-datos">
+                        <div class="raza-avatar raza-siames">🐱</div>
+                        <div>
+                            <h3>Siamés</h3>
+                            <span>Vocal e inteligente</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Media-alta</span>
+                        <div class="patitas" aria-label="4 de 5 en peligrosidad">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Alta</span>
+                        <div class="patitas" aria-label="4 de 5 en limpieza">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Muy alta</span>
+                        <div class="patitas" aria-label="5 de 5 en inteligencia">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Puesto 6 -->
+                <article class="ranking-fila">
+                    <div class="ranking-posicion">
+                        <span class="medalla medalla-normal">6</span>
+                    </div>
+
+                    <div class="raza-datos">
+                        <div class="raza-avatar raza-bengal">🐱</div>
+                        <div>
+                            <h3>Bengalí</h3>
+                            <span>Enérgico y explorador</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Alta</span>
+                        <div class="patitas" aria-label="4 de 5 en peligrosidad">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Media</span>
+                        <div class="patitas" aria-label="3 de 5 en limpieza">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span>🐾</span>
+                            <span>🐾</span>
+                        </div>
+                    </div>
+
+                    <div class="indicador">
+                        <span class="indicador-label">Muy alta</span>
+                        <div class="patitas" aria-label="5 de 5 en inteligencia">
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                            <span class="activa">🐾</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="ranking-nota">
+                Las puntuaciones son orientativas y no sustituyen la valoración
+                individual de un veterinario o especialista en comportamiento felino.
+            </p>
+        </section>
+    </main>
 </body>
+
 </html>
