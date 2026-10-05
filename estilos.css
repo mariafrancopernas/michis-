@@ -188,3 +188,133 @@ a:hover{
         line-height: 1.65;
     }
 }
+
+
+/* FOOTER */
+.site-footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px 25px;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    color: #bdbdbd;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #bdbdbd;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer-logo img {
+    display: block;
+    width: 90px;
+    height: auto;
+
+    /* Convierte un logo negro en blanco */
+    filter: brightness(0) invert(1);
+}
+
+.footer-logo {
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-info {
+        order: 3;
+    }
+
+    .footer-logo {
+        order: 4;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .site-footer {
+        padding: 30px 15px 20px;
+    }
+}
