@@ -785,3 +785,390 @@ body {
         margin: 0 auto;
     }
 }
+
+/* PUNTUACIONES DE GATOS*/
+
+.ranking-razas {
+    padding: 90px 25px 80px;
+    background-color: var(--color-white);
+}
+
+.ranking-cabecera {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 15px;
+
+    color: var(--rosa4);
+    background-color: var(--rosa3);
+    border-radius: 50px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.ranking-cabecera h2 {
+    margin: 0 0 18px;
+    color: var(--color-black);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.ranking-cabecera p {
+    margin: 0;
+    color: var(--color-gray);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* =========================
+   LEYENDA
+   ========================= */
+
+.leyenda-ranking {
+    max-width: 1150px;
+    margin: 38px auto 20px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+
+    color: var(--color-gray);
+    font-size: 0.85rem;
+}
+
+.leyenda-ranking span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.leyenda-patita {
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.patita-rosa {
+    color: var(--rosa4);
+}
+
+.patita-negra {
+    color: #d6d6d6;
+}
+
+/* =========================
+   TABLA DEL RANKING
+   ========================= */
+
+.tabla-ranking {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    overflow: hidden;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.ranking-fila {
+    display: grid;
+    grid-template-columns: 0.55fr 1.5fr repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+
+    min-height: 105px;
+    padding: 20px 25px;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.ranking-fila:last-child {
+    border-bottom: 0;
+}
+
+.ranking-titulos {
+    min-height: auto;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.ranking-fila:not(.ranking-titulos):hover {
+    background-color: var(--color-background);
+}
+
+.ranking-posicion {
+    display: flex;
+    justify-content: center;
+}
+
+.medalla {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.medalla-oro {
+    color: #6b4a00;
+    background-color: #f6d365;
+}
+
+.medalla-plata {
+    color: #47515a;
+    background-color: #dce1e5;
+}
+
+.medalla-bronce {
+    color: #633912;
+    background-color: #e2ae83;
+}
+
+.medalla-normal {
+    color: var(--color-black);
+    background-color: var(--rosa3);
+}
+
+/* =========================
+   DATOS DE CADA RAZA
+   ========================= */
+
+.raza-datos {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.raza-avatar {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--rosa1);
+    border-radius: 50%;
+
+    font-size: 1.7rem;
+}
+
+.raza-ragdoll {
+    background-color: #fce8ef;
+}
+
+.raza-maine-coon {
+    background-color: #f5e6d6;
+}
+
+.raza-british {
+    background-color: #e7e8f4;
+}
+
+.raza-abisinio {
+    background-color: #f8e5c4;
+}
+
+.raza-siames {
+    background-color: #e4eff5;
+}
+
+.raza-bengal {
+    background-color: #f1dfc2;
+}
+
+.raza-datos h3 {
+    margin: 0 0 5px;
+    color: var(--color-black);
+    font-size: 1rem;
+}
+
+.raza-datos span {
+    color: var(--color-gray);
+    font-size: 0.82rem;
+}
+
+/* =========================
+   INDICADORES
+   ========================= */
+
+.indicador {
+    min-width: 130px;
+}
+
+.indicador-label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: var(--color-gray);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.patitas {
+    display: flex;
+    gap: 2px;
+
+    color: #dddddd;
+    font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+    letter-spacing: -3px;
+    white-space: nowrap;
+}
+
+.patitas .activa {
+    color: var(--rosa4);
+}
+
+/* =========================
+   NOTA
+   ========================= */
+
+.ranking-nota {
+    max-width: 900px;
+    margin: 25px auto 0;
+
+    color: var(--color-gray);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 950px) {
+    .ranking-fila {
+        grid-template-columns: 0.4fr 1.4fr repeat(3, 0.9fr);
+        gap: 12px;
+        padding: 18px 15px;
+    }
+
+    .patitas {
+        font-size: 0.85rem;
+    }
+
+    .raza-datos {
+        gap: 9px;
+    }
+
+    .raza-avatar {
+        width: 43px;
+        height: 43px;
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .ranking-razas {
+        padding: 65px 15px;
+    }
+
+    .tabla-ranking {
+        border: 0;
+        box-shadow: none;
+        background-color: transparent;
+        overflow: visible;
+    }
+
+    .ranking-titulos {
+        display: none;
+    }
+
+    .ranking-fila:not(.ranking-titulos) {
+        grid-template-columns: 45px 1fr;
+        gap: 16px;
+
+        margin-bottom: 18px;
+        padding: 20px;
+
+        background-color: var(--color-white);
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius);
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+    }
+
+    .ranking-posicion {
+        grid-row: span 2;
+    }
+
+    .raza-datos {
+        grid-column: 2;
+    }
+
+    .indicador {
+        grid-column: 2;
+        min-width: 0;
+        padding-top: 7px;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .indicador::before {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--color-gray);
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+
+    .ranking-fila:not(.ranking-titulos)
+        .indicador:nth-of-type(3)::before {
+        content: "Peligrosidad";
+    }
+
+    .ranking-fila:not(.ranking-titulos)
+        .indicador:nth-of-type(4)::before {
+        content: "Limpieza";
+    }
+
+    .ranking-fila:not(.ranking-titulos)
+        .indicador:nth-of-type(5)::before {
+        content: "Inteligencia";
+    }
+
+    .leyenda-ranking {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .ranking-fila:not(.ranking-titulos) {
+        grid-template-columns: 38px 1fr;
+        padding: 16px;
+    }
+
+    .raza-datos {
+        align-items: flex-start;
+    }
+
+    .raza-datos h3 {
+        font-size: 0.92rem;
+    }
+
+    .raza-datos span {
+        font-size: 0.75rem;
+    }
+
+    .patitas {
+        font-size: 0.78rem;
+    }
+}
