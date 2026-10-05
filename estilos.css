@@ -10,6 +10,19 @@
     --rosa2: rgb(255, 144, 227);
     --rosa3: rgb(255, 236, 245);
     --rosa4: rgb(131, 0, 109);
+
+        /* Colores generales */
+    --color-black: #111111;
+    --color-black-soft: #242424;
+    --color-white: #ffffff;
+    --color-background: #fff8fb;
+    --color-gray: #666666;
+    --color-border: #dede
+
+        /* Medidas */
+    --content-width: 1150px;
+    --border-radius: 14px;
+    --transition: 0.3s ease;
 }
 
 header{
@@ -332,7 +345,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: var(--color-black);
-    background-color: var(--color-white);
+    background-color: #FFFFFF;
 }
 
 .contact-section {
@@ -341,7 +354,7 @@ body {
         linear-gradient(
             135deg,
             var(--color-background) 0%,
-            var(--color-white) 100%
+            #FFFFFF 100%
         );
 }
 
@@ -439,7 +452,7 @@ body {
 
 .contact-form {
     padding: 38px;
-    background-color: var(--color-white);
+    background-color: #FFFFFF;
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
@@ -465,7 +478,7 @@ body {
     padding: 14px 16px;
 
     color: var(--color-black);
-    background-color: var(--color-white);
+    background-color: #FFFFFF;
     border: 1px solid var(--color-border);
     border-radius: 8px;
 
@@ -532,7 +545,7 @@ body {
     justify-content: center;
     gap: 12px;
 
-    color: var(--color-white);
+    color: #FFFFFF;
     background-color: var(--color-black);
     border: 2px solid var(--color-black);
     border-radius: 8px;
@@ -596,5 +609,179 @@ body {
         width: 100%;
         justify-content: flex-start;
         text-align: left;
+    }
+}
+
+/* SOBRE NOSOTROS Y GALERÍA DE IMÁGENES*/
+.sobre-nosotros {
+    position: relative;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 90px 30px;
+
+    color: var(--color-black);
+    text-align: center;
+}
+
+.sobre-nosotros::before {
+    content: "✦";
+
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: var(--rosa2);
+    font-size: 1.5rem;
+}
+
+.sobre-nosotros h2,
+.galeria h2 {
+    margin: 0 0 22px;
+    color: var(--color-black);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+}
+
+.sobre-nosotros h2::after,
+.galeria h2::after {
+    content: "";
+
+    display: block;
+    width: 65px;
+    height: 4px;
+    margin: 16px auto 0;
+
+    background-color: var(--rosa2);
+    border-radius: 20px;
+}
+
+.sobre-nosotros p {
+    max-width: 780px;
+    margin: 0 auto 16px;
+
+    color: var(--color-gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* =========================
+   GALERÍA
+   ========================= */
+
+.galeria {
+    padding: 90px 30px 100px;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+.galeria h2 {
+    max-width: var(--content-width);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+
+    max-width: var(--content-width);
+    margin: 45px auto 0;
+}
+
+.galeria figure {
+    position: relative;
+    overflow: hidden;
+
+    aspect-ratio: 1 / 1;
+    margin: 0;
+
+    background-color: #FFFFFF;
+    border: 6px solid #FFFFFF;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.galeria figure::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        transparent 45%,
+        rgba(247, 131, 172, 0.25)
+    );
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition);
+}
+
+.galeria figure:hover {
+    box-shadow: 0 18px 35px rgba(214, 51, 108, 0.22);
+    transform: translateY(-8px) rotate(1deg);
+}
+
+.galeria figure:hover::after {
+    opacity: 1;
+}
+
+.galeria img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.galeria figure:hover img {
+    transform: scale(1.08);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+    .galeria-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre-nosotros,
+    .galeria {
+        padding: 65px 20px;
+    }
+
+    .sobre-nosotros::before {
+        top: 35px;
+    }
+
+    .sobre-nosotros p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .galeria-contenedor {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 35px;
+    }
+
+    .galeria figure {
+        max-width: 420px;
+        margin: 0 auto;
     }
 }
