@@ -1172,3 +1172,381 @@ body {
         font-size: 0.78rem;
     }
 }
+
+/* =========================
+   SECCIÓN CUIDADOS
+   ========================= */
+
+.contenedor-cuidados-gatos {
+    padding: 90px 25px;
+    background-color: var(--color-white);
+}
+
+/* =========================
+   REJILLA DE RAZAS
+   ========================= */
+
+.rejilla-razas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+
+    width: min(100%, 1150px);
+    margin: 0 auto 90px;
+}
+
+.tarjeta-raza {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 25px;
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.tarjeta-raza:hover {
+    border-color: var(--rosa1);
+    box-shadow: 0 18px 35px rgba(214, 51, 108, 0.16);
+    transform: translateY(-6px);
+}
+
+.cabecera-raza {
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.titulo-raza {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 10px;
+
+    color: var(--color-black);
+    font-size: 1.25rem;
+}
+
+.titulo-raza::before {
+    content: "🐾";
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+
+    background-color: var(--rosa3);
+    border-radius: 50%;
+
+    font-size: 0.95rem;
+}
+
+.descripcion-raza {
+    margin: 0;
+
+    color: var(--color-gray);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+/* =========================
+   CATEGORÍAS DE CADA RAZA
+   ========================= */
+
+.categorias-raza {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.elemento-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 11px 14px;
+
+    background-color: var(--color-background);
+    border: 1px solid var(--rosa3);
+    border-radius: 9px;
+}
+
+.etiqueta-categoria {
+    color: var(--color-gray);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.valor-categoria {
+    color: var(--color-black-soft);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* =========================
+   COMIDA PARA GATOS
+   ========================= */
+
+.contenedor-cuidados-gatos #Comida-gatos {
+    width: min(100%, 1150px);
+    margin: 0 auto;
+    padding: 45px 30px;
+
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+.contenedor-cuidados-gatos #Comida-gatos > div {
+    max-width: 720px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.contenedor-cuidados-gatos #Comida-gatos h2 {
+    margin: 0 0 15px;
+
+    color: var(--color-black);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.contenedor-cuidados-gatos #Comida-gatos h2::after {
+    content: "";
+
+    display: block;
+    width: 65px;
+    height: 4px;
+    margin: 15px auto 0;
+
+    background-color: var(--rosa1);
+    border-radius: 50px;
+}
+
+.contenedor-cuidados-gatos #Comida-gatos > div p {
+    margin: 0;
+
+    color: var(--color-gray);
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
+.contenedor-cuidados-gatos #Comida-gatos article {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 25px;
+    align-items: center;
+
+    padding: 25px;
+    margin-bottom: 25px;
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.contenedor-cuidados-gatos #Comida-gatos article:last-child {
+    margin-bottom: 0;
+}
+
+.contenedor-cuidados-gatos #Comida-gatos article:hover {
+    border-color: var(--rosa1);
+    box-shadow: 0 14px 30px rgba(214, 51, 108, 0.14);
+    transform: translateY(-4px);
+}
+
+.contenedor-cuidados-gatos #Comida-gatos h3 {
+    margin: 0 0 12px;
+
+    color: var(--rosa4);
+    font-size: 1.15rem;
+}
+
+.contenedor-cuidados-gatos #Comida-gatos article p {
+    margin: 0 0 12px;
+
+    color: var(--color-gray);
+    font-size: 0.93rem;
+    line-height: 1.65;
+}
+
+.contenedor-cuidados-gatos #Comida-gatos article img {
+    display: block;
+
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 5px solid var(--rosa3);
+    border-radius: var(--border-radius);
+}
+
+/* =========================
+   SECCIÓN BAÑOS
+   ========================= */
+
+.cuidar-banhos {
+    width: min(100% - 50px, 900px);
+    margin: 0 auto;
+    padding: 55px 40px;
+
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.cuidar-banhos h2 {
+    margin: 0 0 18px;
+
+    color: var(--color-white);
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.cuidar-banhos h2::after {
+    content: "";
+
+    display: block;
+    width: 65px;
+    height: 4px;
+    margin-top: 15px;
+
+    background-color: var(--rosa1);
+    border-radius: 50px;
+}
+
+.cuidar-banhos p {
+    margin: 0 0 20px;
+
+    color: #d8d8d8;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.cuidar-banhos strong {
+    color: var(--rosa2);
+}
+
+.cuidar-banhos ul,
+.cuidar-banhos ol {
+    margin: 0 0 30px;
+    padding-left: 22px;
+}
+
+.cuidar-banhos li {
+    margin-bottom: 12px;
+
+    color: #e6e6e6;
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+.cuidar-banhos li::marker {
+    color: var(--rosa1);
+    font-weight: 700;
+}
+
+.cuidar-banhos h3 {
+    margin: 0 0 15px;
+
+    color: var(--rosa2);
+    font-size: 1.2rem;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+    .contenedor-cuidados-gatos {
+        padding: 65px 20px;
+    }
+
+    .contenedor-cuidados-gatos #Comida-gatos article {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-cuidados-gatos #Comida-gatos article img {
+        order: -1;
+        height: 230px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor-cuidados-gatos {
+        padding: 50px 15px;
+    }
+
+    .rejilla-razas {
+        gap: 18px;
+        margin-bottom: 65px;
+    }
+
+    .tarjeta-raza {
+        padding: 22px 18px;
+    }
+
+    .elemento-categoria {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .valor-categoria {
+        text-align: left;
+    }
+
+    .contenedor-cuidados-gatos #Comida-gatos {
+        padding: 30px 18px;
+    }
+
+    .contenedor-cuidados-gatos #Comida-gatos article {
+        padding: 20px 18px;
+    }
+
+    .contenedor-cuidados-gatos #Comida-gatos article img {
+        height: 190px;
+    }
+
+    .cuidar-banhos {
+        width: min(100% - 30px, 900px);
+        padding: 40px 22px;
+    }
+}
+
+/* =========================
+   REDUCCIÓN DE MOVIMIENTO
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
