@@ -15,8 +15,8 @@
 -- scripts.js <br>
 
 ### Versiones
- *Versiones anteriores:* 1.0.0, 2.0.0 <br>
-*Última versión publicada:* 3.0.0
+ *Versiones anteriores:* 1.0.0, 2.0.0,3.0.0 <br>
+*Última versión publicada:* 3.0.1
 
 ### Incidencias y soluciones
 Conflictos en la fusión de features con develop
